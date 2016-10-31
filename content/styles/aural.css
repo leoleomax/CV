@@ -1,0 +1,118 @@
+body{
+    background-color: #A2BD6E;
+	}
+main>div{
+	border-radius: 30px 0;
+	box-shadow: 10px 10px 5px rgb(87, 133, 3);
+	margin:20px auto 20px auto;
+	background: #e8e8e8;
+	padding: 20px 107px;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+main>div::before{
+	height: 160px;
+	width: 367px;
+	position: absolute;
+	left: -195px;
+	top: 173px;
+	content: "";
+	background: url(../imgs/cvIconAural.png);
+	background-size: cover;
+	display: inline-block;
+	border-radius: 30px 0;
+	box-shadow: 1px 0px 16px rgb(87, 133, 3);
+	transform: rotate(-80deg);
+}
+main>div>div:nth-of-type(1){
+	display: none;
+}
+td,select{
+	color: #007562;
+}
+tbody:nth-of-type(1){
+	counter-reset: section;
+	border-radius: 30px 0;
+	width: 822px;
+	box-shadow: 1px 0px 16px rgb(87, 133, 3);
+	padding:10px; 
+}
+tbody:nth-of-type(1) th{
+	background-color: #FA7203;
+	color: white;
+	border-radius: 0 30px;
+	border: 1px solid #FA7203;
+}
+tbody:nth-of-type(1) tr:before{
+	counter-increment: section;
+	content: counter(section);
+	font-size: 20px;
+	color: #007562;
+}
+tbody:nth-of-type(1) td{
+	border: 1px solid #FA7203;
+	border-radius: 30px 0;
+}
+table, tbody:nth-of-type(2) {
+	width: 800px;
+    padding: 5px;
+    box-shadow: 1px 0px 16px rgb(87, 133, 3);
+}
+tbody th:hover{
+	background-color: white;
+	color:  #FA7203;
+	transition: 1s;
+}
+tbody:nth-of-type(2) th:nth-child(2):hover{
+	background-color: white;
+	color:  #FA7203;
+	transition: 1s;
+}
+tbody:nth-of-type(2){
+    top: 435px;
+    position: absolute;
+    box-shadow: rgb(87, 133, 3) 1px 0px 16px;
+    border-radius: 0px 20px;
+	transition:transform 2s; 
+	top: 444px;
+}
+tbody:nth-of-type(2):hover{
+	transform: translate(30px,30px);
+}
+tbody:nth-of-type(2) th:nth-child(1){
+	width: 178px;
+}
+
+tbody:nth-of-type(2) th:nth-child(2){
+	border: 1px solid #FA7203;
+	background-color: #FA7203;
+	color: white;
+	border-radius: 0 30px;
+	width: 200px;
+}
+
+tbody:nth-of-type(2) td:nth-child(n+2){
+	border: 1px solid #FA7203;
+	border-radius: 30px 0;
+}
+.skills{
+	border: 1px solid #FA7203;
+	background-color: #FA7203;
+	color: white;
+	border-radius: 0 30px;
+}
+select{
+	background: none;
+	border: none;
+}
+
+#change{
+	background-color: #E7E9FD;
+	width: 165px;
+	height: 25px;
+}
+
+caption,footer{
+	display: none;
+}

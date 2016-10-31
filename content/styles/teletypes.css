@@ -1,0 +1,98 @@
+body{
+	background-color: #EDEEDD;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+main>div::before{
+	position: absolute;
+	content: "";
+	height: 63px;
+	width: 1000px;
+	top: -65px;
+	left: 0px;
+	background-image: url(../imgs/boundFullTty.png);
+	background-size: cover;
+	background-repeat: repeat;
+}
+main>div{
+    padding: 80px 50px 0px 50px;
+	background-color: #F58B0F;
+	border: 3px solid #000;
+    border-radius: 3px;
+    box-shadow: 18px 13px 19px -13px rgba(0,0,0,0.5);
+}
+main>div>div:nth-of-type(1){
+	display: none;
+}
+table{
+	background-color:  #F2F2B4;
+	border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5) inset,
+	10px 10px 15px rgba(0,0,0,0.5) inset,
+	-1px -1px 30px rgba(0,0,0,0.2) inset;
+}
+table::after{
+	position: absolute;
+    content: "";
+    height: 203px;
+    width: 523px;
+    top: 199px;
+    left: -275px;
+    transform: rotate(-76deg);
+    background-image: url(../imgs/penTty.png);
+    background-size: cover;
+    background-repeat: repeat;
+	transition: transform 2s;
+}
+table:hover::after {
+    transform: translateX(-34px) translateY(100px) rotate(-104deg) scale(1.1);
+    transition: transform 2s;
+}
+tbody:nth-of-type(1) {
+	counter-reset: section;
+}
+tbody:nth-of-type(1)  tr:before{
+	counter-increment: section;
+	content: counter(section) ;
+	font-size: 20px;
+	padding-left: 15px;
+}
+tbody:nth-of-type(1)  {
+	padding-top: 10px;
+}
+tbody:nth-of-type(2) td {
+     text-align: left;
+}
+tbody:nth-of-type(1) tr:nth-of-type(1) td:nth-of-type(2){
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+	10px 10px 15px rgba(0,0,0,0.5),
+	-1px -1px 30px rgba(0,0,0,0.2);
+}
+img{
+	-webkit-filter: grayscale(1) sepia(0.6) contrast(1.6);
+}
+footer{
+	left: 5px;
+	top: 649px;
+	position: absolute;
+	width: 986px;
+	height: 30px;
+	background-color:#F2F2B4;
+}
+caption{
+	color: #664b04;
+    font-size: 45px ;
+    text-shadow: -2px 2px 2px #636074;
+    margin-top: -47px;
+}
+body>select{
+	background-color: #F2F2B4;
+	height: 20px;
+	border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+	 10px 10px 15px rgba(0,0,0,0.5),
+	 -1px -1px 30px rgba(0,0,0,0.2);
+}

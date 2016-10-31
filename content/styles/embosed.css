@@ -1,0 +1,95 @@
+@font-face {
+    font-family: FoliaMixRegular;
+    src: url(../fonts/FoliaMixRegular.ttf);
+}
+body{
+	background-color: #64615C;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+body>select{
+	height: 25px;
+    width: 180px;
+    color: #4dabc1;
+    font-family: FoliaMixRegular;
+    font-size: 20px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+	0 0 20px #edff2d, 0 0 30px #e2ff2d, 0 0 40px #ff2d95,
+	0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    background-color: #ffdfc2;
+    border: none;
+    border-radius: 3px;
+}
+footer,caption{
+	display: none;
+}
+main>div{
+	height: 525px;
+	background-color: #FFDFC2;
+	 border-radius: 1%;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+	0 0 20px #bc7222, 0 0 30px #e2ff2d, 0 0 40px #b87023,
+	0 0 50px #bc7222, 0 0 75px #e4a385;
+}
+main>div>div {
+	width: 676px;
+	position: absolute;
+	left: 162px;
+	top: -50px;
+}
+th,td {
+    color: #4dabc1;
+    font-size: 18px;
+    font-family: FoliaMixRegular;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+	0 0 20px #edff2d, 0 0 30px #e2ff2d, 0 0 40px #ff2d95,
+	0 0 50px #ff2d95, 0 0 75px #ff2d95;
+}
+main select{
+	 color: #4dabc1;
+    font-size: 18px;
+    font-family: FoliaMixRegular;
+}
+table{
+	padding:5px 30px 0 20px;
+    width: 950px;
+    border-collapse: collapse;
+
+}
+tbody:nth-of-type(2) th:nth-of-type(1){
+	display: none;
+}
+main>div>div>div{
+	height: 30px;
+    width: 30px;
+    color: #4dabc1;
+    font-size: 30px;
+    font-family: FoliaMixRegular;
+    float: left;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #edff2d, 0 0 30px #e2ff2d, 0 0 40px #ff2d95, 
+    0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    line-height: 30px;
+    border-radius: 5%;
+    margin-right:15px; 
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+    0 0 20px #edff2d, 0 0 30px #e2ff2d, 0 0 40px #ff2d95,
+    0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    animation: movement 600ms ease 75ms infinite alternate;
+}
+@keyframes movement{
+	from{
+		transform: scaleX(1) translateY(0);
+
+	}
+	to{
+		transform: scaleX(0.8) translateY(-20px);
+	}
+}
+@media screen and (min-width:5000px) {
+    tbody td,tbody th {
+        font-size: 5px;
+    }
+}

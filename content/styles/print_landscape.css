@@ -1,0 +1,100 @@
+*{
+    font-size: 20px;
+}
+body{
+	background-color: #8D9955;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+main>div{
+	background-image: url(../imgs/bgPrint_Landscape.jpg);
+    height: 588px;
+    border-radius: 8px;
+    box-shadow: -4px -3px 3px #6e4708, 4px 3px 3px #6e4708;
+}
+main>div>div:nth-of-type(1){
+    display: none;
+}
+#change{
+	background-color: #faecdf;
+	width: 200px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+ 	10px 10px 15px rgba(0,0,0,0.5),
+ 	-1px -1px 30px rgba(0,0,0,0.2);
+}
+table{
+	height: 524px;
+    width: 880px;
+    position: absolute;
+    left: 210px;
+    transform: scale(0.8);
+    animation: come 3s ease-in;
+    -moz-animation: come 3s ease-in;
+    opacity: 0;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+table::before{
+	height: 200px;
+	width: 250px;
+	position: absolute;
+ 	top: -77px;
+    left: 356px;
+    bottom: 121px;
+    content: "";
+    background: url(../imgs/stampPrint_Landscape.png);
+    background-size: cover;
+    display: inline-block;
+    transform: rotate(42deg);
+    animation: stamp 3s ease-in;
+    -moz-animation: stamp 3s ease-in;
+}
+tbody:nth-of-type(2) th:nth-of-type(1),caption,img{
+	display: none;
+}
+th,td,a,tbody select{
+    color: #7d8438;font-weight: bold;
+    text-shadow: #71371c -1px 2px 1px, #71371d -1px -1px 2px, #71371d -3px -1px 2px, #71371d -3px 3px 2px;
+}
+@keyframes stamp {
+	 0%, 80% {
+        transform: scale(3) rotate(5deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(42deg);
+        opacity: 1;
+    }
+}
+@-moz-keyframes stamp {
+	 0%, 80% {
+        transform: scale(3) rotate(5deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(42deg);
+        opacity: 1;
+    }
+}
+@keyframes come {
+	 from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes come {
+	 from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (min-width:5000px) {
+    * {
+        font-size: 5px;
+    }
+}

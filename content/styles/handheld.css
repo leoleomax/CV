@@ -1,0 +1,32 @@
+*{
+	background-color: black;
+	color: white;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+main>div>div:nth-of-type(1),footer{
+	display: none;
+}
+tbody:nth-of-type(1){
+	counter-reset: section;
+}
+	tbody:nth-of-type(1) tr:before{
+	counter-increment: section;
+	content: counter(section);
+}
+th,td,main>div{
+	border: 1px solid white;
+}
+main>div{
+	padding: 20px;
+}
+caption{
+	font-size: 25px;
+}
+tbody:nth-of-type(2) tr th:nth-of-type(1){
+	border: none;
+}
+body>div{
+	display: block;
+}

@@ -1,0 +1,73 @@
+*{
+	color: #776024;
+    font-size: 20px;
+}
+@font-face {
+    font-family: Driftwood;
+    src: url(../fonts/Driftwood.ttf);
+}
+@font-face {
+    font-family: AppleSpice;
+    src: url(../fonts/AppleSpice.ttf);
+}
+body{
+    background-color: #696256;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+caption{
+	font-family: Driftwood;
+	font-weight: bold;
+	font-size: 45px;
+}
+th,.pth{
+ 	font-family: Driftwood;
+ 	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+td{
+	font-family: AppleSpice;
+}
+main>div{
+	background-image: url(../imgs/bgTblBraile.jpg);
+    position: relative;
+}
+main>div>div:nth-of-type(1){
+    display: none;
+}
+tbody:nth-of-type(2){
+	    border-spacing: 41px 6px
+}
+tbody:nth-of-type(2) th:nth-of-type(1),footer{
+    display: none;
+}
+select{
+    width: 110px;
+    box-shadow: -3px -3px 1px #433a2b, 3px 3px 1px #433a2b;
+    float: left;
+}
+table::after {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 275px;
+    left: 769px;
+    content: "";
+    background-image: url(../imgs/cupBraile.png);
+    background-size: cover;
+    display: inline-block;
+    transition: transform 2s;
+}
+table:hover::after {
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
+#change{
+	background-color: #DEDEDE;
+	width: 155px;
+}
+@media screen and (min-width:5000px) {
+    * {
+        font-size: 5px;
+    }
+}

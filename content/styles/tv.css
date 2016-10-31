@@ -1,0 +1,145 @@
+@font-face{
+    font-family: Awesome;
+    src: url(../fonts/FontAwesome.otf);
+}
+body{
+	background-color: #ab7500;
+}
+html, body, main, body>div {
+    opacity: 1;
+}
+main>div{
+	background-image: url(../imgs/Tv.png);
+	background-repeat: no-repeat;
+}
+table{
+    transform: scale(0.2);
+    position: absolute;
+    left: -33px;
+    top: 20px;
+    animation: view 3s forwards;
+    -moz-animation: view 3s forwards;
+    animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    opacity: 0;
+    width: 800px;
+}
+body>select{
+	font-size: 20px;
+	height: 25px;
+    width: 180px;
+    font-family: Grinched;
+    background-color: #f2f2b4;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5),
+    10px 10px 15px rgba(0,0,0,.5),
+    -1px -1px 30px rgba(0,0,0,.2);
+}
+tbody select{
+	color: #664b04;
+    font-family: Grinched;
+    background-color: transparent;
+    text-shadow: 0 0 5px #349620, 0 0 10px #349620, 0 0 15px #349620, 0 0 20px #349620, 0 0 30px #349620, 0 0 40px #349620, 0 0 50px #349620, 0 0 75px #349620;
+    border: none;
+}
+main>div::before{
+    left: -80px;
+    top: 356px;
+    height: 206px;
+    width: 167px;
+    background-image: url(../imgs/controlTv.png);
+    content: "";
+    background-size: cover;
+    position: absolute;
+    animation: go 3s forwards;
+    -moz-animation: go 3s forwards;
+    z-index: 1;
+	transform: scale(1) ;
+}
+footer{
+    top: 579px;
+    left: 16px;
+    position: absolute;
+    background-color: #cec933;
+    border: 2px solid black;
+    border-radius: 18px;
+    box-shadow: 8px -1px 3px 3px #303a00;
+    margin: auto;
+    width: 800px;
+    display: table;
+}
+th{
+    color: #0016f1;
+    font-family: FoliaMixRegular;
+    text-shadow: 0 0 5px #349620,
+    0 0 10px #349620, 0 0 15px #349620,
+    0 0 20px #349620, 0 0 30px #349620,
+    0 0 40px #349620, 0 0 50px #349620, 0 0 75px #349620;
+    font-weight: bold;
+}
+td{
+	color: #c7e20d;
+    font-family: Grinched;
+    text-shadow: 0 0 5px #349620, 0 0 10px #349620,
+    0 0 15px #349620, 0 0 20px #349620, 0 0 30px #349620,
+    0 0 40px #349620, 0 0 50px #349620, 0 0 75px #349620;
+}
+caption,main>div>div:nth-of-type(1),tbody:nth-of-type(2) th:nth-of-type(1){
+	display: none;
+}
+.switch{
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    left: 45%;
+    color: green;
+    display: inline-block;
+    text-shadow: #00303a 0 3px 3px;
+}
+.switch:after{
+    display: inline-block;
+    font-family: Awesome;
+    font-size: 25px;
+    content: "\f16a";
+}
+@keyframes go{
+	from{
+        left: -80px;
+        transform:scale(1) rotate(0deg);
+	}
+	to{
+        left: 697px;
+        transform:scale(0.8) rotate(-25deg);
+	}
+} 
+@-moz-keyframes go{
+	from{
+        left: -80px;
+        transform:scale(1) rotate(0deg);
+	}
+	to{
+        left: 697px;
+        transform:scale(0.6) rotate(-20deg);
+	}
+} 
+@keyframes view{
+	0%{
+		opacity: 1;
+		transform: scale(0.2) rotateX(-180deg);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(0.7) rotateX(0deg);
+	}
+} 
+ @-moz-keyframes view{
+	0%{
+		opacity: 1;
+		transform: scale(0.2) rotateX(-180deg);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(0.7) rotateX(0deg);
+	}
+} 
